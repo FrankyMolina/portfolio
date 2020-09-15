@@ -15,7 +15,7 @@ export default function Projects() {
         reprehenderit. Excepteur excepteur adipisicing consequat et cupidatat
         eiusmod excepteur.Consequat quis esse dolor adipisicing elit minim anim
         dolore. Ea fugiat dolore excepteur velit cupidatat veniam deserunt.
-        Consectetur ad non Lorem est in sint aliqua consectetur exercitation
+        Consectetur ad non Lorem est in sint aliqua consectetur exeZrcitation
         pariatur consectetur officia dolor. Elit aliqua adipisicing do quis
         cillum quis eu aliquip amet nisi duis ex. Minim adipisicing veniam ad
         aute elit occaecat ad esse veniam ipsum exercitation aute. Sit laborum
@@ -39,6 +39,7 @@ export default function Projects() {
         ea qui dolore. Minim occaecat excepteur sunt dolor culpa mollit mollit
         laborum proident.
       </span>
+
 
       <Footer />
     </div>

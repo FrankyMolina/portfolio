@@ -1,24 +1,20 @@
 .navbar {
   background-color: rgba(245, 222, 179, 0.26);
 
+  height: 115px;
+
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
-  
 }
 
-.navbarTop {
+.navbarMain {
   display: flex;
-  justify-content: space-evenly;
-}
-
-.navbarBottom {
-  display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 
   img {
-    max-width: 150px;
+    max-width: 110px;
   }
 }
