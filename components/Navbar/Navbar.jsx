@@ -4,10 +4,10 @@ import styles from './Navbar.module.scss';
 
 export default function Navbar() {
   return (
-    <div className={styles.Navbar}>
+    <div className={styles.navbar}>
       <div className={styles.navbarTop}>
         <div>
-          <Link href="/">
+          <Link href="#">
             <a>LNG</a>
           </Link>
         </div>
