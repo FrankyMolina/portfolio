@@ -5,19 +5,7 @@ import styles from './Navbar.module.scss';
 export default function Navbar() {
   return (
     <div className={styles.navbar}>
-      <div className={styles.navbarTop}>
-        <div>
-          <Link href="#">
-            <a>LNG</a>
-          </Link>
-        </div>
-
-        <div>
-          <button onClick={() => console.log('hello')}>🌒</button>
-        </div>
-      </div>
-
-      <div className={styles.navbarBottom}>
+      <div className={styles.navbarMain}>
         <div>
           <Link href="/">
             <a>
@@ -34,6 +22,10 @@ export default function Navbar() {
 
         <div>
           <span>Contacto</span>
+        </div>
+
+        <div>
+          <button onClick={() => console.log('hello')}>🌒</button>
         </div>
       </div>
     </div>
