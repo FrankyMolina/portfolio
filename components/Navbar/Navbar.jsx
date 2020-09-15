@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className={styles.navbarTop}>
         <div>
           <Link href="/">
-            <a>ENG</a>
+            <a>LNG</a>
           </Link>
         </div>
 
