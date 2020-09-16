@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <div>
       <Navbar />
-      <ContactInfo customClass={styles.try}/>
+      <ContactInfo customClass={styles.contactPage}/>
       <Footer />
     </div>
   );

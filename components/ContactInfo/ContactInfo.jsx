@@ -10,7 +10,10 @@ export default function ContactInfo({ customClass }) {
             target="_blank"
           >
             <img src="./linkedin logo.png" alt="linkedin logo" />
-            LinkdIn
+
+            {customClass
+              ? 'https://www.linkedin.com/in/franciscojaviermolinatorrejon/'
+              : 'LinkdIn'}
           </a>
         </p>
       </div>
@@ -19,7 +22,7 @@ export default function ContactInfo({ customClass }) {
         <p>
           <a href="mailto:fjmolinatorrejon@gmail.com">
             <img src="./gmail logo.png" alt="gmail logo" />
-            Gmail
+            {customClass ? 'fjmolinatorrejon@gmail.com' : 'Gmail'}
           </a>
         </p>
       </div>
@@ -28,7 +31,7 @@ export default function ContactInfo({ customClass }) {
         <p>
           <a href="https://github.com/FrankyMolina" target="_blank">
             <img src="./github logo.png" alt="github logo" />
-            GitHub
+            {customClass ? 'https://github.com/FrankyMolina' : 'Github'}
           </a>
         </p>
       </div>
