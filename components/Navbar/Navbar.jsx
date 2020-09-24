@@ -16,13 +16,13 @@ export default function Navbar() {
 
         <div className={styles.navButtons}>
           <Link href="/projects">
-            <a>Proyectos</a>
+            <a>Projects</a>
           </Link>
         </div>
 
         <div className={styles.navButtons}>
           <Link href="/contact">
-            <a>Contacto</a>
+            <a>Contact</a>
           </Link>
         </div>
 
