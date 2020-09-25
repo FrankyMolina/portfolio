@@ -1,0 +1,28 @@
+[
+  {
+    "id": "savit",
+    "name": "Savit",
+    "img": "/savit-screen.png",
+    "img_alt": "savit web screenshot",
+    "release_date": "03/2020",
+    "tech_used": ["React.js", "Express.js", "Node.js", "MongoDB", "Sass"],
+    "description": "Savit is a platform that connects individuals who intend to adopt a pet, and animal associations, which can register and manage the pets that currently need a home. This application is simply a prototype, an idea which was born from the desire to provide the different animal protection organisations with their own space with a pleasant design, where they could easily see the different pets that were under their care, in a complementary way to the different social networks, so necessary nowadays to obtain visibility.",
+    "URL": "https://savit-app.herokuapp.com/",
+    "github_URL": "https://github.com/FrankyMolina/savit",
+    "status": "Work in progress, it hasn't been worked since the finish of the bootcamp. I will take it in the future."
+  },
+  {
+    "id": "freethealpaca",
+    "name": "Free the alpaca",
+    "img": "/freethealpaca-screen.png",
+    "img_alt": "free the alpaca web screenshot",
+    "release_date": "01/2020",
+    "tech_used": ["HTML Canvas", "JavaScript", "CSS3"],
+    "description": "This is the very first project of mine. A game made on HTML canvas.",
+    "URL": "https://free-the-alpaca.netlify.app/",
+    "github_URL": "https://github.com/FrankyMolina/free-the-alpaca",
+    "status": "It is finished, I want to make some changes to make it usable on mobile, but i have other things to do right now so it has to wait."
+  }
+]
+
+

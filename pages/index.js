@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import MyDescription from '../components/MyDescription';
-import ProjectCarousel from '../components/ProjectsCarousel';
 
 import styles from '../styles/index.module.scss';
 
@@ -16,7 +15,6 @@ export default function Home() {
       <div>
         <Navbar />
         <MyDescription />
-        <ProjectCarousel />
         <Footer />
       </div>
     </div>

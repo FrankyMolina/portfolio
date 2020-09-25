@@ -4,10 +4,8 @@ export default function TechStack({ techs }) {
   return (
     <div className={styles.TechStack}>
       <ul>
-        {techs.map((data) => {
-            return(
-            <li>{data}</li>
-            )
+        {techs.map((data, index) => {
+          return <li key={index}>{data}</li>;
         })}
       </ul>
     </div>
