@@ -9,7 +9,7 @@ export default function ContactInfo({ customClass }) {
             href="https://www.linkedin.com/in/franciscojaviermolinatorrejon/"
             target="_blank"
           >
-            <img src="./linkedin logo.png" alt="linkedin logo" />
+            <img src="/linkedin logo.png" alt="linkedin logo" />
 
             {customClass
               ? 'https://www.linkedin.com/in/franciscojaviermolinatorrejon/'
@@ -21,7 +21,7 @@ export default function ContactInfo({ customClass }) {
       <div>
         <p>
           <a href="mailto:fjmolinatorrejon@gmail.com">
-            <img src="./gmail logo.png" alt="gmail logo" />
+            <img src="/gmail logo.png" alt="gmail logo" />
             {customClass ? 'fjmolinatorrejon@gmail.com' : 'Gmail'}
           </a>
         </p>
@@ -30,7 +30,7 @@ export default function ContactInfo({ customClass }) {
       <div>
         <p>
           <a href="https://github.com/FrankyMolina" target="_blank">
-            <img src="./github logo.png" alt="github logo" />
+            <img src="/github logo.png" alt="github logo" />
             {customClass ? 'https://github.com/FrankyMolina' : 'Github'}
           </a>
         </p>
