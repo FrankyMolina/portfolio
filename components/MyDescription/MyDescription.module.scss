@@ -3,19 +3,18 @@
   flex-direction: column;
   align-items: center;
 
-  border-bottom: 1px solid black;
+  background-image: url('/public/dark-bg.jpeg');
+  background-size: cover;
 
   img {
     max-width: 600px;
   }
 
   div {
-      min-width: 80%;
+    min-width: 80%;
 
-      p {
-          text-align: justify;
-      }
+    p {
+      text-align: justify;
+    }
   }
-
-
 }

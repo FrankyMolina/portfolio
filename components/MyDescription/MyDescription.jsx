@@ -2,19 +2,6 @@ import TechStack from '../TechStack';
 
 import styles from '../MyDescription/MyDescription.module.scss';
 
-const techs = [
-  'React.js',
-  'Next.js',
-  'Node.js',
-  'Express.js',
-  'MongoDB',
-  'HTML5',
-  'CSS3',
-  'Sass',
-  'JavaScript',
-  'Git',
-];
-
 export default function MyDescription() {
   return (
     <div className={styles.MyDescription}>
@@ -36,9 +23,8 @@ export default function MyDescription() {
           project, and that takes great care of its human capital and its
           working environment.
         </p>
-
-        <TechStack techs={techs} />
       </div>
+      <TechStack />
     </div>
   );
 }
