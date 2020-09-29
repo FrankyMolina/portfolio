@@ -9,7 +9,7 @@ export default function TechStack() {
         {techStackJson.map((data, index) => {
           return (
             <li key={index}>
-              <a href={data.URL} target="_blank" rel="noopener noreferrer">
+              <a href={data.URL} target="_blank" rel="noopener noreferrer" className={styles.listElement}>
                 {data.techName}
               </a>
             </li>
