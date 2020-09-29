@@ -1,6 +1,4 @@
 .footer {
-  background-color: yellowgreen;
-
   width: 100%;
   height: 15%;
 
@@ -19,8 +17,6 @@
   p {
     display: flex;
     flex-direction: column;
-
-    background-color: whitesmoke;
 
     border-radius: 10%;
 
@@ -42,6 +38,8 @@
 .copy {
   text-align: center;
   align-self: flex-end;
+
+  color: white;
 
   height: 100%;
 

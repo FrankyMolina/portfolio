@@ -5,7 +5,7 @@ import styles from '../MyDescription/MyDescription.module.scss';
 export default function MyDescription() {
   return (
     <div className={styles.MyDescription}>
-      <img src="/have a nice day 1000.png" alt="have a nice day image" />
+      <img src="/have a nice day 1000-transparent.png" alt="have a nice day image" />
       <div>
         <h3>About me...</h3>
         <p>
