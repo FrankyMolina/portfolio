@@ -1,0 +1,46 @@
+[
+    {
+        "techName": "React.js",
+        "URL": "https://reactjs.org/"
+    },
+    {
+        "techName": "Next.js",
+        "URL": "https://nextjs.org/"
+    },
+    {
+        "techName": "Node.js",
+        "URL": "https://nodejs.org/en/"
+    },
+    {
+        "techName": "Express.js",
+        "URL": "https://expressjs.com/"
+    },
+    {
+        "techName": "MongoDB",
+        "URL": "https://www.mongodb.com/"
+    },
+    {
+        "techName": "JavaScript",
+        "URL": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+        "techName": "HTML5",
+        "URL": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+    },
+    {
+        "techName": "CSS",
+        "URL": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+        "techName": "Sass",
+        "URL": "https://sass-lang.com/"
+    },
+    {
+        "techName": "Git",
+        "URL": "https://git-scm.com/"
+    },
+    {
+        "techName": "Github",
+        "URL": "https://github.com/"
+    }
+  ]
