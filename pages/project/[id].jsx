@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router';
 
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+import Layout from '../../components/Layout';
 import projectsInfo from '../../constants/projectsInfo.json';
 
 import styles from '../../styles/[id].module.scss';
@@ -12,8 +11,7 @@ export default function Project() {
   const projectData = projectsInfo.find((e) => id === e.id);
 
   return (
-    <div>
-      <Navbar />
+    <Layout>
       {projectData ? (
         <div className={styles.projectContainer}>
           <div>
@@ -52,7 +50,6 @@ export default function Project() {
           </div>
         </div>
       ) : null}
-      <Footer />
-    </div>
+    </Layout>
   );
 }
