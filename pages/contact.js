@@ -1,15 +1,12 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Layout from '../components/Layout';
 import ContactInfo from '../components/ContactInfo';
 
 import styles from '../styles/contact.module.scss';
 
 export default function Contact() {
   return (
-    <div>
-      <Navbar />
-      <ContactInfo customClass={styles.contactPage}/>
-      <Footer />
-    </div>
+    <Layout>
+      <ContactInfo customClass={styles.contactPage} />
+    </Layout>
   );
 }
