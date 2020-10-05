@@ -7,8 +7,9 @@
   p {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     background-color: rgba(255, 255, 255, 0.158);
 
     min-height: 60px;
