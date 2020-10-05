@@ -4,8 +4,9 @@
   flex-direction: column;
   justify-content: space-between;
 
-  background-image: url('/dark-bg.jpeg');
+  background-image: linear-gradient(black, rgb(110, 49, 49)), url('/wood-bg.jpg');
   background-size: cover;
+  background-blend-mode: saturation;
 
   main {
     padding-bottom: 10%;

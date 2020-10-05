@@ -5,8 +5,11 @@ import styles from '../MyDescription/MyDescription.module.scss';
 export default function MyDescription() {
   return (
     <div className={styles.MyDescription}>
-      <img src="/have a nice day 1000-transparent.png" alt="have a nice day image" />
-      <div>
+      <img
+        src="/have a nice day 1000-transparent.png"
+        alt="have a nice day image"
+      />
+      <div className={styles.DescriptionText}>
         <h3>About me...</h3>
         <p>
           I am a very curious person, and since I was young I was attracted by
@@ -16,7 +19,6 @@ export default function MyDescription() {
           me to begin was the possibility of making an idea, or a project, a
           reality, with no more need than a computer and an internet connection.
         </p>
-
         <h3>What do you look for in a company culture?</h3>
         <p>
           I would love to be part of a company that is enthusiastic about its

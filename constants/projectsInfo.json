@@ -17,7 +17,7 @@
     "img": "/freethealpaca-screen.png",
     "img_alt": "free the alpaca web screenshot",
     "release_date": "01/2020",
-    "tech_used": ["HTML Canvas", "JavaScript", "CSS3"],
+    "tech_used": ["HTML Canvas", "JavaScript", "CSS"],
     "description": "This is the very first project of mine. A game made on HTML canvas.",
     "URL": "https://free-the-alpaca.netlify.app/",
     "github_URL": "https://github.com/FrankyMolina/free-the-alpaca",

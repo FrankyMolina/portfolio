@@ -1,6 +1,5 @@
 .navbar {
-  // background-color: rgba(245, 222, 179, 0.26);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
   background-color: rgba(255, 255, 255, 0.158);
   height: 115px;
 }
@@ -11,7 +10,9 @@
   align-items: center;
 
   img {
-    max-width: 110px;
+    max-width: 80px;
+
+    padding-top: 1rem;
   }
 }
 

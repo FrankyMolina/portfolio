@@ -1,8 +1,20 @@
 .TechStack {
-  min-height: 250px;
+  padding-top: 4rem;
+
+  > ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    padding: 5px 0;
+
+    background-color: rgba(0, 0, 0, 0.253);
+    backdrop-filter: blur(2px);
+  }
 }
 
 .listElement {
   text-decoration: none;
   color: white;
+  font-weight: bold;
 }
