@@ -1,3 +1,5 @@
+@use '../../styles/colors.scss' as Color;
+
 .TechStack {
   padding-top: 4rem;
 
@@ -15,6 +17,6 @@
 
 .listElement {
   text-decoration: none;
-  color: white;
+  color: Color.$white;
   font-weight: bold;
 }
