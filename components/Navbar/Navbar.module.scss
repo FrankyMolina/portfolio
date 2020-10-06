@@ -8,6 +8,12 @@
   padding: 0.5rem 1rem;
 
   border-bottom: 0.5px solid Color.$low-white;
+
+  transition: all 400ms linear;
+
+  &:hover {
+    border-bottom: 1px solid Color.$green;
+  }
 }
 .navbarButtonContainer {
   display: flex;
