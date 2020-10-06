@@ -1,26 +1,29 @@
-.contactPage {
-  height: 65vh;
+@use '../styles/colors.scss' as Colors;
+@use '../styles/breakPoints.scss' as BreakPoints;
 
+.contactPage {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 
-  // background-image: url('../public/white\ BG.gif');
-  // background-size: cover;
+  @include BreakPoints.mobile {
+    padding-bottom: 85px;
+  }
 
-  div {
-    padding-top: 15px;
+  > div {
+    padding-top: 3rem;
 
     a {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      
+      color: Colors.$white;
+      text-decoration: none;
     }
 
     img {
+      width: 100px;
       max-width: 100px;
     }
   }

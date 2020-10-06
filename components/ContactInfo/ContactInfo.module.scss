@@ -1,4 +1,4 @@
-@use '../../styles/colors.scss' as Color;
+@use '../../styles/colors.scss' as Colors;
 
 .contact {
   display: flex;
@@ -6,7 +6,7 @@
 
   padding-top: 1%;
 
-  p {
+  > div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -27,7 +27,7 @@
       align-items: center;
 
       text-decoration: none;
-      color: Color.$white;
+      color: Colors.$white;
     }
 
     img {

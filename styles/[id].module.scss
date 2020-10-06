@@ -1,15 +1,89 @@
-.projectContainer {
-  height: 100vh;
-  display: flex;
-  justify-content: space-evenly;
+@use '../styles/colors.scss' as Colors;
+@use '../styles/breakPoints.scss' as Breakpoints;
 
-  div {
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem 1rem 1rem;
+
+  @include Breakpoints.mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem 85px 1rem;
+  }
+
+  .projectImageContainer {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 1rem;
+
+    border-radius: 5px;
+
     img {
-      min-width: 500px;
+      width: 50%;
+      height: auto;
+
+      @include Breakpoints.mobile {
+        width: 100%;
+      }
     }
   }
 
-  h3{
+  .projectInfoContainer {
+    width: 50%;
+
+    @include Breakpoints.mobile {
+      width: 100%;
+    }
+
+    > h3 {
       font-weight: bold;
+      color: Colors.$white;
+
+      border-bottom: 1px solid Colors.$green;
+
+      width: 30%;
+
+      @include Breakpoints.mobile {
+        width: 100%;
+      }
+    }
+
+    > p {
+      color: Colors.$white;
+      padding-bottom: 1rem;
+    }
+    .projectLinks {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin-bottom: 1rem;
+
+      background-color: rgba(0, 0, 0, 0.253);
+      backdrop-filter: blur(2px);
+
+      > h3 {
+        font-weight: bold;
+        color: Colors.$white;
+        border-bottom: 1px solid Colors.$green;
+        text-align: center;
+
+        width: 50%;
+
+
+      }
+
+      > a {
+        text-decoration: none;
+        color: Colors.$white;
+
+        &:hover {
+          color: Colors.$green;
+        }
+      }
+    }
   }
 }
