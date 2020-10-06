@@ -19,4 +19,10 @@
   text-decoration: none;
   color: Color.$white;
   font-weight: bold;
+
+  transition: 0.3s;
+
+  &:hover {
+    color: Color.$green;
+  }
 }
