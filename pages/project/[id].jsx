@@ -14,18 +14,18 @@ export default function Project() {
     <Layout>
       {projectData ? (
         <div className={styles.projectContainer}>
-          <div>
+          <div className={styles.projectImageContainer}>
             <img src={projectData.img} alt={projectData.img_alt} />
           </div>
 
-          <div>
+          <div className={styles.projectInfoContainer}>
             <h3>Name:</h3>
             <p>{projectData.name}</p>
 
             <h3>Release date:</h3>
             <p>{projectData.release_date}</p>
 
-            <h3>Technologies used</h3>
+            <h3>Tech Stack:</h3>
             <p>
               {projectData.tech_used.map((techs) => {
                 return `| ${techs} |`;
@@ -35,15 +35,19 @@ export default function Project() {
             <h3>Description</h3>
             <p>{projectData.description}</p>
 
-            <h3>Project URL</h3>
-            <a href={projectData.URL} target="_blank">
-              {projectData.URL}
-            </a>
 
-            <h3>Project Github URL</h3>
-            <a href={projectData.github_URL} target="_blank">
-              {projectData.github_URL}
-            </a>
+            <div className={styles.projectLinks}>
+              <h3>Project URL</h3>
+
+              <a href={projectData.URL} target="_blank">
+                {projectData.URL}
+              </a>
+
+              <h3>Project Github URL</h3>
+              <a href={projectData.github_URL} target="_blank">
+                {projectData.github_URL}
+              </a>
+            </div>
 
             <h3>Project status</h3>
             <p>{projectData.status}</p>

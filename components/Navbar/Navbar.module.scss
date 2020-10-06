@@ -1,4 +1,5 @@
-@use '../../styles/colors.scss' as Color;
+@use '../../styles/colors.scss' as Colors;
+@use '../../styles/breakPoints.scss' as BreakPoint;
 
 .navbarMain {
   display: flex;
@@ -7,19 +8,28 @@
 
   padding: 0.5rem 1rem;
 
-  border-bottom: 0.5px solid Color.$low-white;
+  border-bottom: 0.5px solid Colors.$low-white;
 
   transition: all 400ms linear;
 
   &:hover {
-    border-bottom: 1px solid Color.$green;
+    border-bottom: 1px solid Colors.$green;
+  }
+
+  @include BreakPoint.mobile {
+    flex-direction: column;
   }
 
 }
+
 .navbarButtonContainer {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+
+  @include BreakPoint.mobile {
+    justify-content: space-around;
+  }
 }
 
 .navButtons {
@@ -27,26 +37,31 @@
 
   a {
     text-decoration: none;
-    color: Color.$white;
+    color: Colors.$white;
     font-weight: bold;
     font-size: 22px;
 
     transition: 0.3s;
 
     &:hover {
-      color: Color.$green;
+      color: Colors.$green;
     }
   }
 }
 
 .homeButton {
-  flex-basis: 40%;
+  flex-basis: 35%;
+
+  // @include BreakPoint.tablet {
+  //   flex-basis: 65%;
+  // }
+
   > a {
     display: flex;
     text-decoration: none;
 
     > h1 {
-      color: Color.$white;
+      color: Colors.$white;
       font-weight: bold;
       padding-left: 1rem;
     }

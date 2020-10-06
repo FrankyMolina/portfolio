@@ -1,28 +1,39 @@
-@use '../../styles/colors.scss' as Color;
+@use '../../styles/colors.scss' as Colors;
+@use '../../styles/breakPoints.scss' as BreakPoint;
 
 .TechStack {
   padding-top: 4rem;
 
+  @include BreakPoint.mobile {
+    padding-bottom: 85px;
+  }
+
   > ul {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+
     width: 100%;
 
     padding: 5px 0;
 
-    background-color: rgba(0, 0, 0, 0.253);
-    backdrop-filter: blur(2px);
+    > li {
+      @include BreakPoint.mobile {
+        text-align: center;
+        flex-basis: 33%;
+      }
+    }
   }
 }
 
 .listElement {
   text-decoration: none;
-  color: Color.$white;
+  color: Colors.$white;
   font-weight: bold;
 
   transition: 0.3s;
 
   &:hover {
-    color: Color.$green;
+    color: Colors.$green;
   }
 }
