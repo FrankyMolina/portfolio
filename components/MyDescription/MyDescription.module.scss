@@ -1,7 +1,12 @@
+@use '../../styles/colors.scss' as Color;
+
 .MyDescription {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  max-width: 1200px;
+  margin: 0 auto;
 
   img {
     max-width: 600px;
@@ -13,7 +18,7 @@
 
     p {
       text-align: justify;
-      color: white;
+      color: Color.$white;
 
       padding: 0 2rem 2rem 2rem;
 
@@ -21,7 +26,7 @@
     }
 
     h3 {
-      color: white;
+      color: Color.$white;
       text-align: center;
     }
   }

@@ -1,3 +1,5 @@
+@use '../../styles/colors.scss' as Color;
+
 .contact {
   display: flex;
   justify-content: space-evenly;
@@ -25,7 +27,7 @@
       align-items: center;
 
       text-decoration: none;
-      color: white;
+      color: Color.$white;
     }
 
     img {
