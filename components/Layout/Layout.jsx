@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 import Head from 'next/head';
 
@@ -9,7 +9,23 @@ import ScrollTopBtn from '../ScrollTopBtn';
 import styles from './Layout.module.scss';
 
 export default function Layout({ children }) {
+  const [layoutState, setLayoutState] = useState(0);
   const navBarRef = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  function handleScroll() {
+    setLayoutState(window.scrollY);
+  }
+
+  function scrollToZero() {
+    setLayoutState(0);
+  }
 
   return (
     <div className={styles.wholePage}>
@@ -22,7 +38,9 @@ export default function Layout({ children }) {
 
         <main>{children}</main>
 
-        <ScrollTopBtn DOMElemt={navBarRef} />
+        {layoutState > 80 ? (
+          <ScrollTopBtn DOMElemt={navBarRef} resetScroll={scrollToZero} />
+        ) : null}
 
         <Footer />
       </div>

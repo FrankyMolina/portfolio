@@ -25,7 +25,7 @@
 .navbarButtonContainer {
   display: flex;
   justify-content: flex-end;
-  flex: 1;
+  width: 100%;
 
   @include BreakPoints.mobile {
     justify-content: space-around;
@@ -50,7 +50,7 @@
 }
 
 .homeButton {
-  flex-basis: 35%;
+  flex-basis: 50%;
 
   > a {
     display: flex;
