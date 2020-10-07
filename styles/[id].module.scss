@@ -19,11 +19,10 @@
 
     margin-bottom: 1rem;
 
-    border-radius: 5px;
-
     img {
       width: 50%;
       height: auto;
+      border-radius: 5px;
 
       @include Breakpoints.mobile {
         width: 100%;
@@ -72,8 +71,6 @@
         text-align: center;
 
         width: 50%;
-
-
       }
 
       > a {
