@@ -1,0 +1,38 @@
+@use '../../styles/colors.scss' as Colors;
+@use '../../styles/breakPoints.scss' as BreakPoints;
+
+.scrollTopBtnContainer {
+  color: Colors.$white;
+  font-weight: bold;
+  font-size: 20px;
+
+  position: fixed;
+  z-index: 2;
+  bottom: 3rem;
+  right: 1rem;
+
+  border-radius: 50%;
+  border: 2px solid Colors.$white;
+
+  padding: 3px;
+  background: none;
+  cursor: pointer;
+
+  width: 35px;
+
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.158);
+
+  &:focus {
+    outline: none;
+  }
+
+  @include BreakPoints.mobile {
+    bottom: 7rem;
+  }
+
+  transition: 0.3s;
+  &:hover {
+    border-color: Colors.$green;
+  }
+}
