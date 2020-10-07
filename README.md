@@ -17,4 +17,3 @@ Styles with:
 
 
 <img src="public/have a nice day 1000-transparent.png">
-                        
