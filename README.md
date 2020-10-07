@@ -5,7 +5,8 @@
 ---
 
 Main technology used in the project:
- - **Next.js** (npx create-next-app).
+ - **Next.js** (npx create-next-app). 
+ >Server side rendering oriented framework based on react.
 
 Styles with:
  - **Sass** (npm install sass).

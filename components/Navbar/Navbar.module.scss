@@ -1,5 +1,5 @@
 @use '../../styles/colors.scss' as Colors;
-@use '../../styles/breakPoints.scss' as BreakPoint;
+@use '../../styles/breakPoints.scss' as BreakPoints;
 
 .navbarMain {
   display: flex;
@@ -16,7 +16,7 @@
     border-bottom: 1px solid Colors.$green;
   }
 
-  @include BreakPoint.mobile {
+  @include BreakPoints.mobile {
     flex-direction: column;
   }
 }
@@ -24,9 +24,9 @@
 .navbarButtonContainer {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
+  flex: 1;
 
-  @include BreakPoint.mobile {
+  @include BreakPoints.mobile {
     justify-content: space-around;
   }
 }
@@ -50,10 +50,6 @@
 
 .homeButton {
   flex-basis: 35%;
-
-  // @include BreakPoint.tablet {
-  //   flex-basis: 65%;
-  // }
 
   > a {
     display: flex;

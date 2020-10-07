@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 import styles from './Navbar.module.scss';
 
-export default function Navbar() {
+export default function Navbar({navRef}) {
   return (
-    <div className={styles.navbarMain}>
+    <div className={styles.navbarMain} ref={navRef}>
       <div className={styles.homeButton}>
         <Link href="/">
           <a>
