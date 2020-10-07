@@ -29,6 +29,7 @@
 
   @include BreakPoints.mobile {
     bottom: 7rem;
+    border: 1px solid Colors.$white;
   }
 
   transition: 0.3s;

@@ -19,7 +19,7 @@ export default function ProjectsList() {
             </p>
 
             <div className={styles.projectButton}>
-              <Link href={`/project/${data.id}`}>
+              <Link href="/project/[id]" as={`/project/${data.id}`}>
                 <a>Hmm lets see more</a>
               </Link>
             </div>
