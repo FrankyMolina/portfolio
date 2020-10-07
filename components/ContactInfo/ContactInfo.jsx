@@ -24,7 +24,7 @@ export default function ContactInfo({ customClass }) {
       <div>
         <a href="https://github.com/FrankyMolina" target="_blank">
           <img src="/github logo.png" alt="github logo" />
-          {customClass ? 'https://github.com/FrankyMolina' : 'Github'}
+          {customClass ? '/FrankyMolina' : 'Github'}
         </a>
       </div>
     </div>
