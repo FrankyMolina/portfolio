@@ -2,8 +2,6 @@
 @use '../../styles/breakPoints.scss' as BreakPoint;
 
 .TechStack {
-  padding-top: 4rem;
-
   @include BreakPoint.mobile {
     padding-bottom: 120px;
   }
