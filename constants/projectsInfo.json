@@ -1,11 +1,23 @@
 [
   {
+    "id": "Franky Molina Dev",
+    "name": "Franky Molina Dev ♥",
+    "img": "/FMDev-portfolio.png",
+    "img_alt": "Franky Molina Dev page screenshot",
+    "release_date": "08/2020",
+    "tech_used": ["Next.js", "JavaScript", "Sass", "CSS-Modules"],
+    "description": "This is my official personal website. It has been created using Next.js which is a server side rendering oriented framework based on React. It is a responsive web where I can post my projects, show its information and status, where you can find them and last but not less important, where you can contact with me more easily.",
+    "URL": "https://frankymolina.vercel.app/",
+    "github_URL": "https://github.com/FrankyMolina/portfolio",
+    "status": "It is finished but in constant growth because its content will be updated as soon as I have new features//projects created. 😄"
+  },
+  {
     "id": "savit",
     "name": "Savit",
     "img": "/savit-screen.png",
     "img_alt": "savit web screenshot",
     "release_date": "03/2020",
-    "tech_used": ["React.js", "Express.js", "Node.js", "MongoDB", "Sass"],
+    "tech_used": ["React.js", "Express.js", "Node.js", "MongoDB", "Sass", "JavaScript"],
     "description": "Savit is a platform that connects individuals who intend to adopt a pet, and animal associations, which can register and manage the pets that currently need a home. This application is simply a prototype, an idea which was born from the desire to provide the different animal protection organisations with their own space with a pleasant design, where they could easily see the different pets that were under their care, in a complementary way to the different social networks, so necessary nowadays to obtain visibility.",
     "URL": "https://savit-app.herokuapp.com/",
     "github_URL": "https://github.com/FrankyMolina/savit",
