@@ -1,31 +1,64 @@
-import Link from 'next/link';
+import { useState } from "react";
+import Link from "next/link";
 
-import projectsInfo from '../../constants/projectsInfo.json';
+import projectsInfo from "../../constants/projectsInfo.json";
 
-import styles from './ProjectsList.module.scss';
+import styles from "./ProjectsList.module.scss";
 
 export default function ProjectsList() {
-  return (
-    <div className={styles.ProjectsList}>
-      {projectsInfo.map((data) => {
-        return (
-          <div key={data.id} className={styles.singleProject}>
-            <img src={data.img} alt={data.img_alt} />
-            <h3>{data.name}</h3>
-            <p>
-              {data.tech_used.map((tech) => {
-                return `| ${tech} |`;
-              })}
-            </p>
+  const [searchState, setSearchState] = useState("");
 
-            <div className={styles.projectButton}>
-              <Link href="/project/[id]" as={`/project/${data.id}`}>
-                <a>Hmm lets see more</a>
-              </Link>
-            </div>
-          </div>
-        );
-      })}
+  function handleChange(ev) {
+    const value = ev.target.value;
+    setSearchState(value);
+  }
+
+  function handleClick() {
+    setSearchState("");
+  }
+
+  const searchFormatted = searchState.trim().toLowerCase();
+
+  return (
+    <div className={styles.projectsListContainer}>
+      <div className={styles.searchBar}>
+        <input
+          type="text"
+          value={searchState}
+          name="searchBar"
+          onChange={handleChange}
+          placeholder="Tech name or Project name"
+        />
+        <button onClick={handleClick}>✖</button>
+      </div>
+
+      <div className={styles.projectList}>
+        {projectsInfo
+          .filter(
+            (project) =>
+              project.tech_used.filter((tech) => tech.toLowerCase().includes(searchFormatted)).length ||
+              project.name.toLowerCase().includes(searchFormatted)
+          )
+          .map((project) => {
+            return (
+              <div key={project.id} className={styles.singleProject}>
+                <img src={project.img} alt={project.img_alt} />
+                <h3>{project.name}</h3>
+                <p>
+                  {project.tech_used.map((tech) => {
+                    return `| ${tech} |`;
+                  })}
+                </p>
+
+                <div className={styles.projectButton}>
+                  <Link href="/project/[id]" as={`/project/${project.id}`}>
+                    <a>Hmm lets see more</a>
+                  </Link>
+                </div>
+              </div>
+            );
+          })}
+      </div>
     </div>
   );
 }

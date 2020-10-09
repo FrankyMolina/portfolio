@@ -5,11 +5,11 @@
     "img": "/FMDev-portfolio.png",
     "img_alt": "Franky Molina Dev page screenshot",
     "release_date": "08/2020",
-    "tech_used": ["Next.js", "JavaScript", "Sass", "CSS-Modules"],
+    "tech_used": ["Next.js", "React.js", "JavaScript", "Sass", "CSS-Modules"],
     "description": "This is my official personal website. It has been created using Next.js which is a server side rendering oriented framework based on React. It is a responsive web where I can post my projects, show its information and status, where you can find them and last but not less important, where you can contact with me more easily.",
     "URL": "https://frankymolina.vercel.app/",
     "github_URL": "https://github.com/FrankyMolina/portfolio",
-    "status": "It is finished but in constant growth because its content will be updated as soon as I have new features//projects created. 😄"
+    "status": "It is finished. Its content will be updated as soon as I have new features//projects created. 😄"
   },
   {
     "id": "savit",
@@ -30,7 +30,7 @@
     "img_alt": "free the alpaca web screenshot",
     "release_date": "01/2020",
     "tech_used": ["HTML Canvas", "JavaScript", "CSS"],
-    "description": "This is the very first project of mine. A game made on HTML canvas.",
+    "description": "This is my very first project. A game made on HTML canvas.",
     "URL": "https://free-the-alpaca.netlify.app/",
     "github_URL": "https://github.com/FrankyMolina/free-the-alpaca",
     "status": "It is finished, I want to make some changes to make it usable on mobile, but i have other things to do right now so it has to wait."
