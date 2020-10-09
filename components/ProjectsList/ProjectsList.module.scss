@@ -1,11 +1,52 @@
 @use '../../styles/colors.scss' as Colors;
 @use '../../styles/breakPoints.scss' as BreakPoints;
 
-.ProjectsList {
+.projectList {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-top: 3rem;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  margin-bottom: 2rem;
+
+  > input {
+    flex-basis: 40%;
+
+    background: none;
+    border: none;
+    border-bottom: 1px solid Colors.$white;
+
+    @include BreakPoints.mobile {
+      flex-basis: 70%;
+      padding: 5px;
+    }
+
+    &::placeholder {
+      color: Colors.$low-white;
+    }
+
+    &:focus {
+      outline: none;
+      color: Colors.$white;
+    }
+  }
+  > button {
+    background: none;
+    border: none;
+    color: Colors.$white;
+    border-bottom: 1px solid Colors.$white;
+  }
+}
+
+.projectsListContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
 
   @include BreakPoints.mobile {
     display: flex;
